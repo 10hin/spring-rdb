@@ -8,7 +8,7 @@
 		<version>2.7.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>in._10h.java.springrdb.r2dbc.postgresql</groupId>
+	<groupId>in._10h.java.springrdb.r2dbc.mysql</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>

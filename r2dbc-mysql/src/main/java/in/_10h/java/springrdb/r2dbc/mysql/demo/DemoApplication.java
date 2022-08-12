@@ -1,4 +1,4 @@
-package in._10h.java.springrdb.r2dbc.postgresql.demo;
+package in._10h.java.springrdb.r2dbc.mysql.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
