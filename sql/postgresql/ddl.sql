@@ -1,4 +1,4 @@
-CREATE TABLE "user" (
+CREATE TABLE "user_tbl" (
     "id" bigserial not null,
     "name" character varying(1024) not null,
     "age" smallint,

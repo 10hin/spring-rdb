@@ -15,7 +15,7 @@ import org.springframework.lang.Nullable;
 @Setter
 @ToString
 @EqualsAndHashCode
-@Table(name = "user")
+@Table(name = "user_tbl")
 public class UserEntity {
 
     public UserEntity() {
