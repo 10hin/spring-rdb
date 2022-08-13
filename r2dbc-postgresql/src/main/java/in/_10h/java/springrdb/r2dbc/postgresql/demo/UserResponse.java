@@ -7,7 +7,7 @@ import lombok.Value;
 public class UserResponse {
 
     @NonNull
-    String id;
+    Long id;
     @NonNull
     String name;
     Integer age;

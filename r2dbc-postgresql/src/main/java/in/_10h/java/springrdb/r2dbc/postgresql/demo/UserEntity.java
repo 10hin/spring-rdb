@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
@@ -14,6 +15,7 @@ import org.springframework.lang.Nullable;
 @Setter
 @ToString
 @EqualsAndHashCode
+@Table(name = "user")
 public class UserEntity {
 
     public UserEntity() {
@@ -21,7 +23,7 @@ public class UserEntity {
     }
 
     @Id
-    private final String id;
+    private final Long id;
 
     @NonNull
     private String name;
@@ -33,7 +35,7 @@ public class UserEntity {
     private String memo;
 
     @NonNull
-    public UserEntity withId(final String id) {
+    public UserEntity withId(final Long id) {
         return new UserEntity(
                 id,
                 this.name,

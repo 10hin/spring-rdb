@@ -32,7 +32,7 @@ public class DemoController {
             }
     )
     public Mono<UserResponse> getUser(
-            @PathVariable("user_id") final String userID
+            @PathVariable("user_id") final Long userID
     ) {
 
         return this.userRepository.findById(userID)
@@ -63,7 +63,7 @@ public class DemoController {
             }
     )
     public Mono<UserResponse> upsertUser(
-            @PathVariable("user_id") String userID,
+            @PathVariable("user_id") Long userID,
             @RequestBody Mono<UserDraftRequest> userUpdateProperties
     ) {
 
@@ -94,8 +94,8 @@ public class DemoController {
             "/users/{user_id}",
             "/users/{user_id}/",
     })
-    public Mono<String> deleteUser(
-            @PathVariable("user_id") String userID
+    public Mono<Long> deleteUser(
+            @PathVariable("user_id") Long userID
     ) {
 
         return this.userRepository.deleteById(userID)

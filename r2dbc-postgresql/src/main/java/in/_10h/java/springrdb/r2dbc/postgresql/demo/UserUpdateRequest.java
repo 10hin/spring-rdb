@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
 public class UserUpdateRequest {
 
     @NonNull
-    String id;
+    Long id;
     @NonNull
     String name;
     @Nullable
