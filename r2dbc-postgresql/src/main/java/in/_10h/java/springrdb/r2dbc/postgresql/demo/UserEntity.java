@@ -20,6 +20,7 @@ public class UserEntity {
 
     public UserEntity() {
         this.id = null;
+        this.name = "";
     }
 
     @Id
