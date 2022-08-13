@@ -1,0 +1,5 @@
+spring:
+  r2dbc:
+    url: rd2bc:postgresql://postgresql.spring-rdb.svc:5432/user
+    username: postgres
+    # password should be set by environment variable SPRING_R2DBC_PASSWORD
