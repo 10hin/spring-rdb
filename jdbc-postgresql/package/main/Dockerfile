@@ -19,4 +19,4 @@ COPY --chown=1001:1001 --from=builder /demo.jar /app/demo.jar
 
 USER 1001:1001
 WORKDIR /app
-ENTRYPOINT ['java', '-jar', '/app/demo.jar']
+ENTRYPOINT ["java", "-jar", "/app/demo.jar"]
