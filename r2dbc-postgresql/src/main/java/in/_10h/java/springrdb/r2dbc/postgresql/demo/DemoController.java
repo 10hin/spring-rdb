@@ -1,5 +1,7 @@
 package in._10h.java.springrdb.r2dbc.postgresql.demo;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,6 +38,7 @@ public class DemoController {
     ) {
 
         return this.userRepository.findById(userID)
+                .log()
                 .map(UserResponse::from);
 
     }
