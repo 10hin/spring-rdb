@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
@@ -24,15 +25,19 @@ public class UserEntity {
     }
 
     @Id
+    @Column("id")
     private final Long id;
 
     @NonNull
+    @Column("name")
     private String name;
 
     @Nullable
+    @Column("age")
     private Integer age;
 
     @Nullable
+    @Column("memo")
     private String memo;
 
     @NonNull
