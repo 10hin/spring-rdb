@@ -19,11 +19,6 @@ import org.springframework.lang.Nullable;
 @Table(name = "user_tbl")
 public class UserEntity {
 
-    public UserEntity() {
-        this.id = null;
-        this.name = "";
-    }
-
     @Id
     @Column("id")
     private final Long id;

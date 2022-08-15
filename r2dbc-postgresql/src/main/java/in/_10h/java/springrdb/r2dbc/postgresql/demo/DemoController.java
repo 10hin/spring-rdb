@@ -41,7 +41,6 @@ public class DemoController {
     ) {
 
         return this.userRepository.findById(userID)
-                .log(LOGGER)
                 .map(UserResponse::from);
 
     }
