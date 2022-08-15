@@ -1,5 +1,6 @@
 package in._10h.java.springrdb.r2dbc.postgresql.demo;
 
+import in._10h.java.springrdb.r2dbc.postgresql.demo.r2dbcrepositories.UserEntity;
 import lombok.NonNull;
 import lombok.Value;
 import org.springframework.lang.Nullable;

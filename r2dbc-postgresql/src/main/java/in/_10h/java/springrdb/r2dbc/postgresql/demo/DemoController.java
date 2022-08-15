@@ -1,7 +1,6 @@
 package in._10h.java.springrdb.r2dbc.postgresql.demo;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import in._10h.java.springrdb.r2dbc.postgresql.demo.r2dbcrepositories.UserRepository;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,9 +10,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
+import reactor.util.Logger;
+import reactor.util.Loggers;
 
 @RestController
 public class DemoController {
+
+    private static final Logger LOGGER = Loggers.getLogger(DemoController.class);
 
     @NonNull
     private final UserRepository userRepository;
@@ -38,7 +41,7 @@ public class DemoController {
     ) {
 
         return this.userRepository.findById(userID)
-                .log()
+                .log(LOGGER)
                 .map(UserResponse::from);
 
     }
