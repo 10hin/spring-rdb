@@ -1,4 +1,4 @@
-package in._10h.java.springrdb.r2dbc.postgresql.demo;
+package in._10h.java.springrdb.r2dbc.postgresql.demo.r2dbcrepositories;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
