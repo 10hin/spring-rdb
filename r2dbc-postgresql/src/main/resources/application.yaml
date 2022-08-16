@@ -1,6 +1,6 @@
 spring:
   r2dbc:
-    url: r2dbc:postgresql://postgresql.spring-rdb.svc:5432/user?connectTimeout=10&socketTimeout=10&tcpKeepAlive=true
+    url: r2dbc:postgresql://postgresql.spring-rdb.svc:5432/user?connectTimeout=PT10S&socketTimeout=PT10S&tcpKeepAlive=true
     username: postgres
     # password should be set by environment variable SPRING_R2DBC_PASSWORD
     pool:
